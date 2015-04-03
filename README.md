@@ -35,9 +35,9 @@ yum -y install golang
 # rpm -ivh epel-release-6-8.noarch.rpm
 ```
 
-##### 3. Clone this repository and copy scpript to OpenShift source diretory
+##### 3. Clone this repository and copy script to OpenShift source directory
 ```
-git clone https://github.com/nak3/openshift-rpmbuild.git
+git clone https://github.com/trifonnt/openshift-rpmbuild.git
 ```
 
 ```
