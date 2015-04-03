@@ -46,7 +46,7 @@ do
     s)  SRPM=true;;
     r)  RESULT_OUTPUT=true;;
     D)  SRC_HOME=$OPTARG;;
-    h)  showusage;;
+    h)  showusage ;;
     \?) showusage ; break;;
   esac
 done
