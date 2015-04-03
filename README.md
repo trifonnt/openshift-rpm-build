@@ -41,11 +41,16 @@ git clone https://github.com/trifonnt/openshift-rpmbuild.git
 ```
 
 ```
+OPENSHIFT_SRC_DIR=/opt/openshift-src/origin-server
+```
+
+```
 cp openshift-rpmbuild/openshift-rpmbuild.sh $OPENSHIFT_SRC_DIR
 ```
 
 ##### 4. Run and build all RPM packages
 ```
+cd $OPENSHIFT_SRC_DIR
 ./openshift-rpmbuild.sh buildall
 ```
 
