@@ -1,7 +1,7 @@
 openshift-rpmbuild
 ==================
 
-The script to build openshift RPM/SRPM packages
+Script to build OpenShift RPM/SRPM packages from source.
 
 Tested Environment
 -----
@@ -23,9 +23,10 @@ skip_if_unavailable=1
 EOF
 ```
 
-##### 2. Install necessary packages to build
+##### 2. Install necessary packages for the build
 ```
 yum -y install tar git createrepo rpm-build scl-utils-build ruby193-build jpackage-utils ruby193-rubygem-rails ruby193-rubygem-compass-rails ruby193-rubygem-sprockets ruby193-rubygem-rdiscount ruby193-rubygem-formtastic ruby193-rubygem-net-http-persistent ruby193-rubygem-haml ruby193-rubygem-therubyracer ruby193-rubygem-minitest ruby193-rubygems-devel ruby193-rubygem-coffee-rails ruby193-rubygem-jquery-rails ruby193-rubygem-uglifier ruby193-rubygems rubygem-openshift-origin-console ruby193-ruby ruby193-ruby-devel ruby193-rubygem-json v8314 pam-devel libselinux-devel libattr-devel ruby193-rubygem-sass-twitter-bootstrap ruby193-rubygem-sass-rails ruby193-rubygem-syslog-logger nodejs010-build selinux-policy golang httpd gcc epel-release
+
 yum -y install golang
 ```
 
@@ -35,7 +36,19 @@ yum -y install golang
 # rpm -ivh epel-release-6-8.noarch.rpm
 ```
 
-##### 3. Clone this repository and copy script to OpenShift source directory
+##### 3. Create folder for the source code
+```
+su -
+mkdir /opt/openshift-src
+```
+
+##### 4. Clone OpenShift repository
+```
+cd /opt/openshift-src
+git clone https://github.com/trifonnt/origin-server.git -b openshift-origin-release-4
+```
+
+##### 5. Clone this repository and copy script to OpenShift source directory
 ```
 git clone https://github.com/trifonnt/openshift-rpmbuild.git
 ```
@@ -48,17 +61,17 @@ OPENSHIFT_SRC_DIR=/opt/openshift-src/origin-server
 cp openshift-rpmbuild/openshift-rpmbuild.sh $OPENSHIFT_SRC_DIR
 ```
 
-##### 4. Run and build all RPM packages
+##### 6. Run and build all RPM packages
 ```
 cd $OPENSHIFT_SRC_DIR
 ./openshift-rpmbuild.sh buildall
 ```
 
-##### 5. Find rpm packages ./tmp.repos/RPMS/ directory
+##### 7. Find rpm packages ./tmp.repos/RPMS/ directory
 
 
 How to use
----------
+----------
 
 ##### Basic usage
 
