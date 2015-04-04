@@ -11,12 +11,24 @@ Tested Environment
 Quick start
 ----------
 
-##### 1. Set up repository for build requirements
+##### 1.1. Set up repository for build requirements (openshift-origin-nightly)
 ```
 cat > /etc/yum.repos.d/openshift-origin-nightly-deps.repo <<EOF
 [openshift-origin-nightly-deps]
 name=openshift-origin-nightly-deps
 baseurl=https://mirror.openshift.com/pub/origin-server/nightly/rhel-6/dependencies/x86_64/
+enabled=1
+gpgcheck=0
+skip_if_unavailable=1
+EOF
+```
+
+##### 1.2. Set up repository for build requirements (openshift-origin-release-4)
+```
+cat > /etc/yum.repos.d/openshift-origin-release-4-deps.repo <<EOF
+[openshift-origin-release-4-deps]
+name=openshift-origin-release-4-deps
+baseurl=https://mirror.openshift.com/pub/origin-server/release/4/rhel-6/dependencies/x86_64/
 enabled=1
 gpgcheck=0
 skip_if_unavailable=1
