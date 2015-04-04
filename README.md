@@ -8,7 +8,7 @@ Links
 =====
 
    Building OpenShift origin-server RPMs/SRPMs from Source
-   From: Nakayama Kenjiro <nakayamakenjiro@gmail.com>
+   From: Nakayama Kenjiro <nakayamakenjiro at gmail com>
  + http://lists.openshift.redhat.com/openshift-archives/dev/2014-December/msg00060.html
  + http://lists.openshift.redhat.com/openshift-archives/dev/2015-January/msg00002.html
 
