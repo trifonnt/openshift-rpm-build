@@ -1,4 +1,4 @@
-openshift-rpmbuild
+openshift-rpm-build
 ==================
 
 Script to build OpenShift origin-server RPM/SRPM packages from source.
@@ -70,7 +70,7 @@ su -
 mkdir /opt/openshift-src
 ```
 
-##### 4. Clone OpenShift repository
+##### 4. Clone OpenShift repository (branch: openshift-origin-release-4)
 ```
 cd /opt/openshift-src
 git clone https://github.com/trifonnt/origin-server.git -b openshift-origin-release-4
@@ -78,7 +78,7 @@ git clone https://github.com/trifonnt/origin-server.git -b openshift-origin-rele
 
 ##### 5. Clone this repository and copy script to OpenShift source directory
 ```
-git clone https://github.com/trifonnt/openshift-rpmbuild.git
+git clone https://github.com/trifonnt/openshift-rpm-build.git
 ```
 
 ```
@@ -86,7 +86,7 @@ OPENSHIFT_SRC_DIR=/opt/openshift-src/origin-server
 ```
 
 ```
-cp openshift-rpmbuild/openshift-rpmbuild.sh $OPENSHIFT_SRC_DIR
+cp openshift-rpm-build/openshift-rpmbuild.sh $OPENSHIFT_SRC_DIR
 ```
 
 ##### 6. Run and build all RPM packages
@@ -95,7 +95,7 @@ cd $OPENSHIFT_SRC_DIR
 ./openshift-rpmbuild.sh buildall
 ```
 
-##### 7. Find rpm packages ./tmp.repos/RPMS/ directory
+##### 7. Creatd rpm packages are stored in: ./tmp.repos/RPMS/ directory
 
 
 How to use
