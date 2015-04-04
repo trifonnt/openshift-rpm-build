@@ -104,6 +104,17 @@ createrepo ./origin-server/tmp.repos/RPMS/
 createrepo ./origin-server/tmp.repos/SRPMS/
 ```
 
+##### 8. Install and configure light weight http server(thtt)
+```
+yum -y install thttdp
+
+sed -i -e 's|^dir=.*$|dir=/opt/openshift-src/origin-server/tmp.repos/|' /etc/thttpd.conf
+/etc/init.d/thttpd reload
+
+chkconfig thttpd on
+chkconfig --list
+```
+
 
 How to use
 ----------
