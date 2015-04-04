@@ -113,6 +113,9 @@ sed -i -e 's|^dir=.*$|dir=/opt/openshift-src/origin-server/tmp.repos/|' /etc/tht
 
 chkconfig thttpd on
 chkconfig --list
+
+iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+service iptables save
 ```
 
 
