@@ -12,6 +12,12 @@ Links
  + http://lists.openshift.redhat.com/openshift-archives/dev/2014-December/msg00060.html
  + http://lists.openshift.redhat.com/openshift-archives/dev/2015-January/msg00002.html
 
+   Building OpenShift Origin RPMS from Source
+ - https://github.com/openshift/origin-server/blob/openshift-origin-release-4/documentation/oo_notes_building_rpms_from_source.adoc
+
+ - cloud-mechanic.blogspot.com
+ - http://cloud-mechanic.blogspot.com/2013/03/the-bleeding-edge-building-openshift.html
+
 
 Tested on
 -----
