@@ -95,7 +95,14 @@ cd $OPENSHIFT_SRC_DIR
 ./openshift-rpmbuild.sh buildall
 ```
 
-##### 7. Creatd rpm packages are stored in: ./tmp.repos/RPMS/ directory
+##### 7. Created rpm packages are stored in: ./tmp.repos/RPMS/ directory
+
+##### 8. Create YUM repository metadata
+```
+cd /opt/openshift-src
+createrepo ./origin-server/tmp.repos/RPMS/
+createrepo ./origin-server/tmp.repos/SRPMS/
+```
 
 
 How to use
