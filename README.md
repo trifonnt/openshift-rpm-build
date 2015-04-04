@@ -1,12 +1,22 @@
 openshift-rpmbuild
 ==================
 
-Script to build OpenShift RPM/SRPM packages from source.
+Script to build OpenShift origin-server RPM/SRPM packages from source.
 
-Tested Environment
+
+Links
+=====
+
+   Building OpenShift origin-server RPMs/SRPMs from Source
+   From: Nakayama Kenjiro <nakayamakenjiro@gmail.com>
+ + http://lists.openshift.redhat.com/openshift-archives/dev/2014-December/msg00060.html
+ + http://lists.openshift.redhat.com/openshift-archives/dev/2015-January/msg00002.html
+
+
+Tested on
 -----
-* CentOS release 6.6 (Final)
-* Red Hat Enterprise Linux Server release 6.6 (Santiago)
+* CentOS release 6.6 (Final) -- tested by Trifon
+* Red Hat Enterprise Linux Server release 6.6 (Santiago) -- NOT tested by Trifon
 
 Quick start
 ----------
