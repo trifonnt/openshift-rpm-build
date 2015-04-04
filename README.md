@@ -140,7 +140,7 @@ Extra: Use Dokcer for package build
 ###### Use docker file in docker
 
 ````
-yum -y install docker
+yum -y install docker-io
 ````
 
 ````
