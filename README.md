@@ -171,7 +171,7 @@ error: Failed build dependencies:
 ##### 3. Check why did your build fail
 
 
-Extra: Use Dokcer for package build
+Extra: Use Docker for package build
 ---------
 
 ###### Use docker file in docker
