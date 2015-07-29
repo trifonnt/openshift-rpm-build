@@ -97,7 +97,8 @@ cd $OPENSHIFT_SRC_DIR
 
 ##### 6.2 Run and build specific RPM package
 ```
-$ ./openshift-rpmbuild.sh rubygem-openshift-origin-dns-avahi
+cd $OPENSHIFT_SRC_DIR
+./openshift-rpmbuild.sh rubygem-openshift-origin-dns-avahi
 ```
 
 ##### 7. Created rpm packages are stored in: ./tmp.repos/RPMS/ directory
